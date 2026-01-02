@@ -1,4 +1,5 @@
-import { BarChart3, Database, Code, Smartphone, ShoppingCart, Bot, ArrowUpRight,  } from 'lucide-react';
+import { BarChart3, Database, Code, Smartphone, ShoppingCart, Link, ArrowUpRight,  } from 'lucide-react';
+
 
 const services = [
   {
@@ -32,9 +33,9 @@ const services = [
     gradient: 'from-green-400 via-emerald-500 to-teal-500',
   },
   {
-    icon: Bot,
-    title: "RPA & Blockchain",
-    description: "Automate repetitive, high-volume, time-consuming tasks with RPA while building secure, reliable blockchain solutions that ensure traceability and data integrity across transactions.",
+    icon: Link,
+    title: "Blockchain",
+    description: "We offer end-to-end blockchain application development services to build reliable blockchain solutions that provide traceability and security of your data and transactions",
     gradient: 'from-indigo-600 via-violet-600 to-fuchsia-500',
   }
 ];
@@ -75,9 +76,9 @@ export const ServicesSection = () => {
               </p>
 
               {/* Link */}
-              <div className="flex items-center gap-2 text-accent font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* <div className="flex items-center gap-2 text-accent font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                 Learn more <ArrowUpRight className="w-4 h-4" />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
