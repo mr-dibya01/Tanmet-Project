@@ -159,7 +159,7 @@ export const ContactSection = () => {
                 ))}
               </div>
 
-              <div className="mt-8 rounded-xl overflow-hidden flex-1 card-glass">
+              <div className="mt-8 rounded-xl overflow-hidden h-[40vh]  sm:flex-1 card-glass">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5879654772974!2d80.25384!3d13.0037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzEzLjMiTiA4MMKwMTUnMTMuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
                   width="100%"
