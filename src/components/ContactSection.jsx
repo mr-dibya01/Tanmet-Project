@@ -16,11 +16,33 @@ export const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    const subject = encodeURIComponent("Website Enquiry");
+    const body = encodeURIComponent(
+      `Name: ${formData.name}
+      Email: ${formData.email}
+      Phone: ${formData.phone}
+
+      Message:
+      ${formData.message}`
+    );
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // 📱 Mobile → Gmail App (via mailto)
+      window.location.href = `mailto:05ranjandibya@gmail.com?subject=${subject}&body=${body}`;
+    } else {
+      // 💻 Desktop → Gmail Web
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=05ranjandibya@gmail.com&su=${subject}&body=${body}`,
+        "_blank"
+      );
+    }
+    // toast({
+    //   title: "contact us in gmail contactus@tanmet.in!",
+    //   description: "Thank you for reaching out.",
+    // });
+    // setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
   const handleChange = (e) => {
@@ -119,7 +141,7 @@ export const ContactSection = () => {
                 </div>
 
                 <Button type="submit" variant="accent" size="lg" className="w-full">
-                  Send Message
+                  <a href="mailto:contactus@tanmet.in">Send Message</a>
                   <Send className="w-5 h-5" />
                 </Button>
               </form>
