@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import logo from '../assets/tanmet.png'
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,12 +10,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">T</span>
-              </div>
-              <span className="font-bold text-xl">Tanmet Technologies</span>
-            </div>
+            <img src={logo} alt="" className='sm:w-28 w-20 mb-4'/>
             <p className="text-primary-foreground/70 mb-6 max-w-md">
               Tanmet Technologies helps organizations address their business challenges with the help of right technology solutions. We are a one-stop-shop for your digital transformation.
             </p>

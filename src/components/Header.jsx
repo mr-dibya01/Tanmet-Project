@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '../assets/tanmet.png'
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -43,14 +44,7 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-xl">T</span>
-            </div>
-            <span className={`font-bold text-xl transition-colors duration-300 ${
-              isScrolled ? 'text-foreground' : 'text-white'
-            }`}>
-              Tanmet
-            </span>
+            <img src={logo} alt="" className='sm:w-28 w-20'/>
           </a>
 
           {/* Desktop Navigation */}
