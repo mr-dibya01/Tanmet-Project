@@ -30,11 +30,11 @@ export const ContactSection = () => {
 
     if (isMobile) {
       // 📱 Mobile → Gmail App (via mailto)
-      window.location.href = `mailto:05ranjandibya@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:contactus@tanmet.in.com?subject=${subject}&body=${body}`;
     } else {
       // 💻 Desktop → Gmail Web
       window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=05ranjandibya@gmail.com&su=${subject}&body=${body}`,
+        `https://mail.google.com/mail/?view=cm&fs=1&to=contactus@tanmet.in.com&su=${subject}&body=${body}`,
         "_blank"
       );
     }
