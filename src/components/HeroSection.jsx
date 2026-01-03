@@ -41,12 +41,12 @@ export const HeroSection = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-up-delay-1">
             Innovating{' '}
             <span className="relative">
-              <span className="text-gradient">
+              <span className="text-[#EB181E]">  {/* text-gradient */}
                 Digital Future
               </span>
-              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
+              {/* <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
                 <path d="M2 10C50 4 100 2 150 6C200 10 250 4 298 8" stroke="hsl(344, 100%, 39%)" strokeWidth="3" strokeLinecap="round" />
-              </svg>
+              </svg> */}
             </span>
           </h1>
 
@@ -58,10 +58,10 @@ export const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
             <Button
-              variant="hero"
+              // variant="hero"
               size="lg"
               onClick={() => scrollToSection('#contact')}
-              className="group"
+              className="group bg-[#EB181E]"
             >
               Contact Us
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

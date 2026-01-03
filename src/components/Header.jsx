@@ -61,7 +61,8 @@ export const Header = () => {
               </button>
             ))}
             <Button
-              variant={isScrolled ? 'accent' : 'hero'}
+              // variant={isScrolled ? 'accent' : 'hero'}
+              className="bg-[#EB181E]"
               size="sm"
               onClick={() => scrollToSection('#contact')}
             >

@@ -15,7 +15,7 @@ export const AboutSection = () => {
                 Who are we
               </h2>
               <p className="text-muted-foreground text-xl leading-relaxed mb-8">
-                Tanmet Technologies was formed by passionate people to transform the vision of businesses in the areas of Healthcare, HR, and Inventory. We deliver efficient and growth-accelerating solutions from website design, development, mobile apps to cloud solutions.Since 2012, we are committed to always achieving and pushing the level of our performance. We deliver end-to-end technology solutions from startups to small and medium enterprises.
+                Tanmet Technologies was formed by passionate people to transform the vision of businesses in the areas of Healthcare, HR, and Inventory. We deliver efficient and growth-accelerating solutions from website design, development, mobile apps to cloud solutions.Since 2019, we are committed to always achieving and pushing the level of our performance. We deliver end-to-end technology solutions from startups to small and medium enterprises.
               </p>
 
             </div>
