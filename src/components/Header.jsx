@@ -36,7 +36,7 @@ export const Header = () => {
     <header
       className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-card/95 backdrop-blur-md shadow-card'
+          ? ''         //bg-card/95 backdrop-blur-md shadow-card
           : 'bg-transparent'
       }`}
     >
@@ -96,7 +96,7 @@ export const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <Button variant="accent" className="mt-2" onClick={() => scrollToSection('#contact')}>
+              <Button className="bg-[#EB181E] mt-2" onClick={() => scrollToSection('#contact')}>
                 Get in Touch
               </Button>
             </div>
